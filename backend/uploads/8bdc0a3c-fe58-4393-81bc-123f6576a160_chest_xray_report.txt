@@ -1,0 +1,15 @@
+DEPARTMENT OF RADIOLOGY & IMAGING SCIENCES
+PATIENT: Johnathan Doe | AGE: 41 | GENDER: Male | MRN: 90281
+EXAMINATION: CHEST RADIOGRAPH (PA AND LATERAL VIEWS)
+CLINICAL INDICATION: Chronic dry cough, dyspnea on exertion.
+
+FINDINGS:
+The cardiac silhouette is within normal limits for size and contour.
+Cardiothoracic ratio is normal (0.45).
+Pulmonary vascularity is within normal physiological limits.
+No focal consolidation, pneumothorax, or large pleural effusion visualized.
+Trachea is midline. Osseous structures and soft tissues of the thoracic cage are unremarkable.
+
+IMPRESSION:
+No acute cardiopulmonary disease. Normal posteroanterior and lateral chest radiograph.
+Reporting Radiologist: Dr. Elena Rostova, MD, PhD

@@ -1,0 +1,187 @@
+{
+  "dataset_info": {
+    "name": "Clinical Cardiometabolic & Diabetes Risk Dataset (NIDDK / CDC Reference)",
+    "total_samples": 1000,
+    "features_count": 8,
+    "positive_prevalence": 0.282,
+    "features": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age"
+    ]
+  },
+  "models": {
+    "logistic_regression": {
+      "id": "logistic_regression",
+      "name": "Logistic Regression",
+      "type": "Linear Baseline",
+      "accuracy": 0.9,
+      "precision": 0.86,
+      "recall": 0.7679,
+      "f1_score": 0.8113,
+      "roc_auc": 0.9742,
+      "confusion_matrix": [
+        [
+          137,
+          7
+        ],
+        [
+          13,
+          43
+        ]
+      ],
+      "test_samples": 200,
+      "true_negatives": 137,
+      "false_positives": 7,
+      "false_negatives": 13,
+      "true_positives": 43
+    },
+    "random_forest": {
+      "id": "random_forest",
+      "name": "Random Forest Classifier",
+      "type": "Ensemble Tree",
+      "accuracy": 0.875,
+      "precision": 0.878,
+      "recall": 0.6429,
+      "f1_score": 0.7423,
+      "roc_auc": 0.9617,
+      "confusion_matrix": [
+        [
+          139,
+          5
+        ],
+        [
+          20,
+          36
+        ]
+      ],
+      "test_samples": 200,
+      "true_negatives": 139,
+      "false_positives": 5,
+      "false_negatives": 20,
+      "true_positives": 36
+    },
+    "xgboost": {
+      "id": "xgboost",
+      "name": "XGBoost Classifier",
+      "type": "Gradient Boosted Decision Trees",
+      "accuracy": 0.885,
+      "precision": 0.8235,
+      "recall": 0.75,
+      "f1_score": 0.785,
+      "roc_auc": 0.9608,
+      "confusion_matrix": [
+        [
+          135,
+          9
+        ],
+        [
+          14,
+          42
+        ]
+      ],
+      "test_samples": 200,
+      "true_negatives": 135,
+      "false_positives": 9,
+      "false_negatives": 14,
+      "true_positives": 42
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "Pregnancies",
+      "random_forest": 0.0555,
+      "xgboost": 0.1175,
+      "logistic_regression": 0.0692
+    },
+    {
+      "feature": "Glucose",
+      "random_forest": 0.4304,
+      "xgboost": 0.3484,
+      "logistic_regression": 0.3501
+    },
+    {
+      "feature": "BloodPressure",
+      "random_forest": 0.0667,
+      "xgboost": 0.0852,
+      "logistic_regression": 0.0812
+    },
+    {
+      "feature": "SkinThickness",
+      "random_forest": 0.0252,
+      "xgboost": 0.0405,
+      "logistic_regression": 0.0163
+    },
+    {
+      "feature": "Insulin",
+      "random_forest": 0.0685,
+      "xgboost": 0.0496,
+      "logistic_regression": 0.0268
+    },
+    {
+      "feature": "BMI",
+      "random_forest": 0.153,
+      "xgboost": 0.1267,
+      "logistic_regression": 0.1812
+    },
+    {
+      "feature": "DiabetesPedigreeFunction",
+      "random_forest": 0.0823,
+      "xgboost": 0.1013,
+      "logistic_regression": 0.1434
+    },
+    {
+      "feature": "Age",
+      "random_forest": 0.1184,
+      "xgboost": 0.1309,
+      "logistic_regression": 0.1318
+    }
+  ],
+  "shap_global_ranking": [
+    {
+      "feature": "Glucose",
+      "mean_abs_shap": 0.1598,
+      "description": "Plasma glucose concentration (mg/dL)"
+    },
+    {
+      "feature": "BMI",
+      "mean_abs_shap": 0.0679,
+      "description": "Body mass index (weight in kg/(height in m)^2)"
+    },
+    {
+      "feature": "Age",
+      "mean_abs_shap": 0.0578,
+      "description": "Patient age in chronological years"
+    },
+    {
+      "feature": "Pregnancies",
+      "mean_abs_shap": 0.0337,
+      "description": "Number of gestations / pregnancies"
+    },
+    {
+      "feature": "BloodPressure",
+      "mean_abs_shap": 0.0332,
+      "description": "Diastolic blood pressure (mm Hg)"
+    },
+    {
+      "feature": "DiabetesPedigreeFunction",
+      "mean_abs_shap": 0.0315,
+      "description": "Genetic risk score based on ancestral medical history"
+    },
+    {
+      "feature": "Insulin",
+      "mean_abs_shap": 0.0285,
+      "description": "2-Hour serum insulin concentration (mu U/ml)"
+    },
+    {
+      "feature": "SkinThickness",
+      "mean_abs_shap": 0.0039,
+      "description": "Triceps skin fold thickness (mm)"
+    }
+  ]
+}
